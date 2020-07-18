@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Yet Another ToDo App</title>
+</head>
+
+<body>
+  <div id="app-container">
+
+    <h1>To Do App</h1>
+    <div id="container"> 
+      
+      <div id="project-container">
+        <div class="project-header">Projects</div> 
+        <div id="project-list"></div>
+        <div id="addProjCont"><button id="addNewProject">Add New Project</button></div>
+      </div>
+      
+      <div id="todo-container"> 
+        <div id="centering">
+          <div class="todo-header">
+            <div>Item</div>
+            <div>Due Date</div>
+            <div>
+              <select id="priority-sort">
+                <option selected=true disabled="disabled">priority</option>
+                <option value="all">all</option>
+                <option value="high">high</option>
+                <option value="med">med</option>
+                <option value="low">low</option>
+                <option value="none">none</option>
+              </select>
+            </div>
+            <div></div>
+            <div class="edit-btn"></div>
+            <div class="x-btn"></div>
+          </div>
+          <div id="todos"></div>
+          <div id="addTodoCont"><button id="addNewTodo">Add New Todo</button></div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+
+<script src="main.js"></script>
+</html>  

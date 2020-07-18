@@ -1,0 +1,108 @@
+#app-container {
+  margin: 0 auto;
+  width: 85%;
+}
+
+#container {
+  display: flex;
+}
+
+#centering {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#project-container {
+  background-color: rgb(189, 185, 185);
+  border: 1px solid #000;
+  padding: 10px;
+  margin-right: 10px;
+  width: 30%;
+}
+
+#todo-container {
+  background-color: turquoise;
+  border: 1px solid #000;
+  padding: 10px;
+  width: 79%;
+}
+
+#addTodoCont {
+  margin-top: 10px;
+}
+
+.active-project {
+  font-weight: bold;
+  color: rgb(16, 16, 197);
+  font-size: 18px;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.complete {
+  text-decoration: line-through;
+  color: #555;
+}
+
+.x-btn, .edit-btn {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.x-btn:hover, .edit-btn:hover {
+  color: #fff;
+}
+
+.todo-header, .project-header {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.todo-header, .todo-item {
+  display: grid;
+  grid-template-columns: auto 25% 10% 1.4em 1.4em 1.4em;
+}
+
+.new-todo-item {
+  display: grid;
+  grid-template-columns: auto 25% 10% 2.8em 1.4em;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  #app-container {
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  
+  #container {
+    display: block;
+  }
+
+  #todo-container, #project-container {
+    box-sizing: border-box;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  #centering {
+    width: 100%;
+  }
+}
